@@ -1,0 +1,23 @@
+ul{
+    background-color: rgb(100, 100, 100);
+    list-style-type: none;
+    direction: rtl;
+    margin-top: 0;
+    border-radius: 8px;
+}
+li{
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    padding: 16px;
+    
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.img{
+    padding-right: 1000px;
+    padding-top: 25px;
+}

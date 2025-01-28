@@ -1,0 +1,31 @@
+html{
+    font-size: 17px;
+    font-family: Arial, sans-serif;
+}
+body{
+    padding:  0 20px;
+}
+h1{
+    margin-top: 0;
+}
+.content{
+    float: left;
+    width: 70%;
+}
+.sidebar{
+    float: left;
+    width: 25%;
+   
+}
+.footer{
+    clear: both;
+    padding-top: 2em;
+    border-top: solid 1px black;
+}
+@media(max-width:900px){
+    .content{width: 60%;}
+    .sidebar{width: 40%;}
+}
+@media(max-width:400px){
+    .content,.sidebar{float: none; width: auto;}
+}
