@@ -1,144 +1,183 @@
+
+
+/* تنظیمات عمومی برای تمام عناصر */
 * {
-  overflow-x: hidden;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  overflow-x: hidden; /* جلوگیری از نمایش اسکرول افقی */
+  box-sizing: border-box; /* تغییر نحوه محاسبه ابعاد عناصر */
+  margin: 0; /* حذف تمام حاشیه‌های پیش‌فرض */
+  padding: 0; /* حذف تمام فواصل داخلی پیش‌فرض */
 }
+
+/* تنظیمات برای تگ body */
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #ffff;
-  color: #000;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* تعیین فونت اصلی صفحه */
+  background: #ffff; /* تنظیم رنگ پس‌زمینه */
+  color: #000; /* تعیین رنگ متن */
+  font-size: 16px; /* اندازه فونت متن */
+  line-height: 1.5; /* فاصله خطوط متن */
 }
+
+/* تنظیمات لینک‌ها */
 a {
-  color: #262626;
-  text-decoration: none;
+  color: #262626; /* رنگ لینک */
+  text-decoration: none; /* حذف خط زیر لینک */
 }
+
+/* حذف علامت لیست‌ها */
 ul {
   list-style: none;
 }
+
+/* تنظیمات برای container */
 .container {
-  width: 90%;
-  max-width: 5000px;
-  margin: auto;
+  width: 90%; /* عرض 90% از صفحه */
+  max-width: 5000px; /* حداکثر عرض برای container */
+  margin: auto; /* مرکز چین کردن container */
 }
 
-/* nav Style */
+/* تنظیمات نوار ناوبری */
 .nav {
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 60px;
-  padding: 20px 0;
-  font-size: 13;
+  overflow: hidden; /* جلوگیری از بیرون زدن محتوای نوار */
+  display: flex; /* استفاده از فلکس‌باکس برای چیدمان */
+  align-items: center; /* تنظیم عمودی به وسط */
+  justify-content: space-between; /* فاصله مساوی بین المان‌ها */
+  height: 60px; /* ارتفاع نوار */
+  padding: 20px 0; /* فاصله داخلی از بالا و پایین */
+  font-size: 13px; /* اندازه فونت */
 }
+
+/* تنظیمات لوگو */
 .nav .logo {
-  width: 110px;
+  width: 110px; /* عرض لوگو */
 }
+
+/* تنظیمات منو */
 .nav ul {
-  display: flex;
+  display: flex; /* استفاده از فلکس‌باکس */
 }
 
 .nav ul li {
-  padding: 0 10px;
-}
-.nav ul li a {
-  padding-bottom: 2px;
-}
-.nav ul li a:hover {
-  border-bottom: 2px solid #262626;
-}
-.nav ul.menu {
-  flex: 1;
-  margin-left: 40px;
-}
-.btn {
-  display: inline-block;
-  border: 0;
-  font-weight: bold;
-  padding: 10px 20px;
-  background: #262626;
-  color: #ffff;
-  font-size: 16px;
-}
-.btn:hover {
-  opacity: 0.8;
+  padding: 0 10px; /* فاصله بین آیتم‌های منو */
 }
 
-/* banner 1 */
-.banner1 {
-  margin-top: 10px;
-  width: 100%;
-  height: 500px;
-  background: url(image/slide1.png) no-repeat center/cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: flex-end;
-  padding-bottom: 50px;
-  margin-bottom: 20px;
+.nav ul li a {
+  padding-bottom: 2px; /* فاصله زیر لینک */
 }
+
+/* افکت هاور برای لینک‌ها در منو */
+.nav ul li a:hover {
+  border-bottom: 2px solid #262626; /* اضافه کردن خط زیر لینک هنگام هاور */
+}
+
+/* تنظیمات منو ناوبری */
+.nav ul.menu {
+  flex: 1; /* منو به اندازه باقی‌مانده فضای افقی کشیده می‌شود */
+  margin-left: 40px; /* فاصله از سمت چپ */
+}
+
+/* استایل دکمه‌ها */
+.btn {
+  display: inline-block; /* نمایش دکمه به صورت بلوک در خط */
+  border: 0; /* حذف حاشیه */
+  font-weight: bold; /* پررنگ کردن متن */
+  padding: 10px 20px; /* فاصله داخلی دکمه */
+  background: #262626; /* رنگ پس‌زمینه دکمه */
+  color: #ffff; /* رنگ متن دکمه */
+  font-size: 16px; /* اندازه فونت دکمه */
+}
+
+/* افکت هاور دکمه‌ها */
+.btn:hover {
+  opacity: 0.8; /* کاهش شفافیت دکمه هنگام هاور */
+}
+
+/* بنر اول */
+.banner1 {
+  margin-top: 10px; /* فاصله از بالا */
+  width: 100%; /* عرض 100% */
+  height: 500px; /* ارتفاع 500px */
+  background: url(image/slide1.png) no-repeat center/cover; /* تصویر پس‌زمینه بنر */
+  display: flex; /* استفاده از فلکس‌باکس */
+  flex-direction: column; /* چیدمان عمودی */
+  align-items: center; /* مرکز چین کردن عمودی */
+  text-align: center; /* متن در مرکز بنر */
+  justify-content: flex-end; /* محتوا در پایین بنر قرار می‌گیرد */
+  padding-bottom: 50px; /* فاصله از پایین */
+  margin-bottom: 20px; /* فاصله از پایین */
+}
+
+/* استایل‌های محتویات بنر */
 .banner1 h2,
 .banner1 p {
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* فاصله پایین */
 }
+
 .banner1 .btn {
-  margin-top: 18px;
+  margin-top: 18px; /* فاصله از بالا */
 }
 
-/* card 1 */
+/* تنظیمات کارت‌ها (Card) */
 .card1 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  margin-bottom: 30px;
-}
-.card1 img {
-  width: 100%;
-  margin-bottom: 20px;
-}
-.card1 h3 {
-  margin-bottom: 5px;
-}
-.card1 a {
-  display: inline-block;
-  padding-top: 10px;
-  color: #0067b8;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.card1 img:hover {
-  opacity: 0.8;
+  display: grid; /* استفاده از grid برای چیدمان */
+  grid-template-columns: repeat(4, 1fr); /* تقسیم صفحه به 4 ستون مساوی */
+  gap: 20px; /* فاصله بین کارت‌ها */
+  margin-bottom: 30px; /* فاصله از پایین */
 }
 
-/* banner 2 */
+/* تنظیمات تصاویر در کارت‌ها */
+.card1 img {
+  width: 100%; /* عرض 100% */
+  margin-bottom: 20px; /* فاصله پایین */
+}
+
+.card1 h3 {
+  margin-bottom: 5px; /* فاصله پایین از عنوان */
+}
+
+.card1 a {
+  display: inline-block; /* نمایش به صورت inline-block */
+  padding-top: 10px; /* فاصله بالا */
+  color: #0067b8; /* رنگ لینک */
+  text-transform: uppercase; /* متن به صورت حروف بزرگ */
+  font-weight: bold; /* پررنگ کردن متن لینک */
+}
+
+/* افکت هاور روی تصاویر */
+.card1 img:hover {
+  opacity: 0.8; /* کاهش شفافیت هنگام هاور */
+}
+
+/* بنر دوم */
 .banner2 {
   width: 100%;
   height: 450px;
   background: url(image/xbox.png) no-repeat center/cover;
   margin: 20px 0 20px 0;
 }
+
+/* تنظیمات محتوای بنر دوم */
 .banner2 .content {
-  width: 40%;
-  padding: 50px 0 0 30px;
-}
-.banner2 p {
-  margin: 15px 0 20px;
-}
-.banner2:hover {
-  opacity: 0.8;
+  width: 40%; /* عرض 40% */
+  padding: 50px 0 0 30px; /* فاصله داخلی */
 }
 
-/* card 2 */
+.banner2 p {
+  margin: 15px 0 20px; /* فاصله‌ها */
+}
+
+.banner2:hover {
+  opacity: 0.8; /* کاهش شفافیت هنگام هاور */
+}
+
+/* کارت‌های دوم */
 .card2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   margin-bottom: 30px;
 }
+
+/* استایل کارت‌های دوم مشابه کارت‌های اول */
 .card2 img {
   width: 100%;
   margin-bottom: 20px;
@@ -157,147 +196,170 @@ ul {
   opacity: 0.8;
 }
 
-/* banner3 */
+/* بنر سوم */
 .banner3 {
   width: 100%;
   height: 300px;
   background: url(image/carbon.jpg) no-repeat center/cover;
   margin: 20px 0 20px 0;
 }
+
+/* تنظیمات محتوای بنر سوم */
 .banner3 .content {
-  width: 55%;
-  padding: 100px 0 0 30px;
+  width: 55%; /* عرض 55% */
+  padding: 100px 0 0 30px; /* فاصله داخلی */
 }
+
 .banner3 h2 {
-  color: white;
-  margin-top: 12px;
+  color: white; /* رنگ متن سفید */
+  margin-top: 12px; /* فاصله از بالا */
 }
+
 .banner3 a {
-  background-color: white;
-  color: #555;
-  margin-top: 18px;
+  background-color: white; /* رنگ پس‌زمینه دکمه */
+  color: #555; /* رنگ متن */
+  margin-top: 18px; /* فاصله از بالا */
 }
+
 .banner3 .content {
-  color: aliceblue;
+  color: aliceblue; /* رنگ متن */
 }
 
-/* follow */
+/* بخش دنبال کردن (Follow) */
 .follow {
-  display: flex;
-  align-items: center;
+  display: flex; /* استفاده از فلکس‌باکس */
+  align-items: center; /* مرکز چین کردن عمودی */
   justify-self: flex-start;
-  margin: 30px 0 30px;
+  margin: 30px 0 30px; /* فاصله از بالا و پایین */
 }
+
 .follow a {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 10px; /* فاصله از چپ */
+  margin-right: 10px; /* فاصله از راست */
 }
-/* link */
+
+/* لینک‌ها در بخش لینک‌ها */
 .link {
-  background: #f2f2f2;
-  color: #616161;
-  font-size: 12px;
-  padding: 35px 0;
+  background: #f2f2f2; /* رنگ پس‌زمینه */
+  color: #616161; /* رنگ متن */
+  font-size: 12px; /* اندازه فونت */
+  padding: 35px 0; /* فاصله داخلی */
 }
+
 .link-inner {
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 10px;
-  align-items: flex-start;
-  justify-content: center;
+  max-width: 1500px; /* حداکثر عرض */
+  margin: 0 auto; /* مرکز چین کردن */
+  padding: 0 20px; /* فاصله داخلی */
+  display: grid; /* استفاده از grid */
+  grid-template-columns: repeat(6, 1fr); /* شش ستون */
+  gap: 10px; /* فاصله بین ستون‌ها */
+  align-items: flex-start; /* چیدمان به سمت بالا */
+  justify-content: center; /* مرکز چین کردن */
 }
+
 .link li {
-  line-height: 2.8;
+  line-height: 2.8; /* فاصله خطوط */
 }
 
 .link {
-  border-bottom: #000 2.5px solid;
+  border-bottom: #000 2.5px solid; /* خط پایین */
 }
 
-/* footer */
+/* پاورقی */
 .footer {
-  background: #f2f2f2;
-  color: #616161;
-  font-size: 12px;
-  padding: 20px 0;
+  background: #f2f2f2
+
+; /* رنگ پس‌زمینه */
+  color: #616161; /* رنگ متن */
+  font-size: 12px; /* اندازه فونت */
+  padding: 20px 0; /* فاصله داخلی */
 }
+
 .footer-inner {
-  max-width: 5000px;
-  margin: 0 auto;
-  padding: 0 20px 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  max-width: 5000px; /* حداکثر عرض */
+  margin: 0 auto; /* مرکز چین کردن */
+  padding: 0 20px 0 20px; /* فاصله داخلی */
+  display: flex; /* استفاده از فلکس‌باکس */
+  align-items: center; /* مرکز چین کردن عمودی */
+  justify-content: space-between; /* فاصله مساوی */
 }
+
 .footer div {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* فاصله پایین */
   display: flex;
   align-items: center;
 }
+
 .footer div i {
-  margin-right: 10px;
+  margin-right: 10px; /* فاصله از راست */
 }
+
+/* تنظیمات لینک‌های پایانی */
 .footer ul,
 li {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: 30px;
-  margin-bottom: 20px;
+  display: flex; /* استفاده از فلکس‌باکس */
+  flex-wrap: wrap; /* اجازه به آیتم‌ها برای رفتن به خط بعد */
+  margin-right: 30px; /* فاصله از راست */
+  margin-bottom: 20px; /* فاصله پایین */
 }
 
-/* responsive */
-
+/* تنظیمات برای نمایش ریسپانسیو */
 @media (max-width: 700px) {
   .nav ul.menu {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: -50px;
-
-    background: #f2f2f2;
-    width: 50%;
-    height: 50%;
-    border-right: 3px solid #ccc;
-    opacity: 0.91;
-    padding: 20px;
+    display: block; /* نمایش به صورت بلوک */
+    position: absolute; /* موقعیت‌یابی مطلق */
+    top: 0; /* تنظیم از بالا */
+    left: -50px; /* تنظیم از چپ */
+    background: #f2f2f2; /* رنگ پس‌زمینه */
+    width: 50%; /* عرض 50% */
+    height: 50%; /* ارتفاع 50% */
+    border-right: 3px solid #ccc; /* خط راست */
+    opacity: 0.91; /* شفافیت */
+    padding: 20px; /* فاصله داخلی */
   }
+
   .nav ul.menu li {
-    border-bottom: 3px solid #ccc;
-    opacity: 0.91;
-    padding: 20px;
+    border-bottom: 3px solid #ccc; /* خط پایین آیتم‌ها */
+    opacity: 0.91; /* شفافیت */
+    padding: 20px; /* فاصله داخلی */
   }
 
+  /* تنظیمات برای کارت‌ها */
   .card1 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* تقسیم به دو ستون */
   }
+
   .card2 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* تقسیم به دو ستون */
   }
+
   .banner2 .content p {
-    display: none;
+    display: none; /* مخفی کردن پاراگراف */
   }
+
   .banner2 .content h2 {
-    padding-bottom: 30px;
+    padding-bottom: 30px; /* فاصله پایین */
   }
-  .banner3 .content{
-    width: 75%;
+
+  .banner3 .content {
+    width: 75%; /* عرض 75% */
   }
-  .link .link-inner{
-    grid-template-columns: repeat(2,1fr);
+
+  .link .link-inner {
+    grid-template-columns: repeat(2, 1fr); /* تقسیم به دو ستون */
   }
 }
+
 @media (max-width: 500px) {
-       .card1{
-        grid-template-columns: 1fr;
-       }
-       .link .link-inner{
-        grid-template-columns: 1fr;
-      }
-      .banner3 .content p{
-        display: none;
-      }
-    }
-  
+  .card1 {
+    grid-template-columns: 1fr; /* تبدیل به یک ستون */
+  }
+
+  .link .link-inner {
+    grid-template-columns: 1fr; /* تبدیل به یک ستون */
+  }
+
+  .banner3 .content p {
+    display: none; /* مخفی کردن پاراگراف */
+  }
+}
